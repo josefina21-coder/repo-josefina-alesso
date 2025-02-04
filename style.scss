@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$primary-color: #005c99;
+$secondary-color: #0072be;
+$background-color: rgb(245, 244, 242);
+$text-color: white;
+$font-family: "Poppins", serif;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-style {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    &:hover, &:focus {
+        transform: scale(1.05);
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+}
+// Banner
+.banner {
+    @include flex-center;
+    color: $text-color;
+    background-color: $primary-color;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 5%;
+}
+
+// Promo button
+.promo-button {
+    @include button-style;
+}
+
+// Menu
+.menu {
+    background-color: $secondary-color;
+    padding: 10px 0;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 15px;
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-size: 16px;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// Hero section
+.hero {
+    text-align: center;
+    h2 {
+        font-size: 30px;
+        color: $primary-color;
+    }
+    h3 {
+        font-size: 25px;
+        color: $secondary-color;
+    }
+}
+
+// Grid galeria
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    object-fit: cover;
+}
+
+// Botones
+.boton-azul {
+    @extend .promo-button;
+}
+
+// Location section
+.location-container {
+    @include flex-center;
+    gap: 20px;
+    padding-top: 150px;
+}
+
+.mapa {
+    width: 40%;
+    height: auto;
+}
+
+// ayuda button
+.ayuda {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+// Responsive 
+@media screen and (max-width: 700px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu ul li a {
+        font-size: 12px;
+    }
+    .banner {
+        font-size: 12px;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu ul li a {
+        font-size: 10px;
+    }
+    .banner {
+        font-size: 10px;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu ul li a {
+        font-size: 10px;
+    }
+    .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -7,50 +7,72 @@
     <title>Tienda</title>
 </head>
 <body>
-    <section class="encabezado-productos">
-        <header> <!--encabezado-->
-            <h1>BLOOM & BLOSSOM</h1>
-        </header>
-    </section>
-    <div class="menu-container">
-        <div class="hamburger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav id="menu" class="menu">
+    <div>
+        <nav class="menu">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href=".//pages/productos.html">Productos</a></li>
-                <li><a href=".//pages/redes.html">Contacto</a></li>
-                <li><a href=".//pages/nosotros.html">Quienes somos</a></li>
-                <li><a href=".//pages/cuidados.html">Como cuidar tus plantitas</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Tienda</a></li>
+                <li><a href="../pages/cuidados.html">¿Como cuidar tus plantitas?</a></li>
+                <li><a href="../pages/redes.html">Contacto</a></li>
+                <li><a href="../pages/nosotros.html">Quienes somos</a></li>
             </ul>
         </nav>
     </div>
+    <section class="encabezado">
+        <header> <!--encabezado-->
+            <a href="./pages/productos.html" class="banner"><p>10% OFF EN TU PRIMERA COMPRA</p></a>
+            <h1>BLOOM & BLOSSOM</h1>
+        </header> 
+    </section>
+    <div class="cart-icon">
+        <a href="../pages/productos.html">
+            <img src="../img/market.png" alt="Carrito de Compras">
+        </a>
+    </div>
     <main><!--contenido principal-->
-        <h1>Tienda Online</h1>
-        <div>
-            <h2>Productos</h2>
-            <div id="productos" class="productos">
-                <ul>
-                    <li><img src="../img/Calathea.jpg" alt="Calathea"><p>Calathea</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Helecho.jpg" alt="helecho-de-boston"><p>Helecho</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Gomero.jpg" alt="gomero"><p>Gomero (ficus elastica)</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Pothus.jpg" alt="pothus"><p>Pothus Golden (lemon)</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Monstera.jpg" alt="monstera"><p>Monstera Deliciosa</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Philodendro.jpg" alt="philodendro"><p>Philodendro Peruviano</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Santa Rita.jpg" alt="santa-rita"><p>Santa Rita (Bugambilla)</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/Cact lovers.jpg" alt="terrario"><p>Terrario con variedad de cactus</p><a href="" class="boton-verde">Comprar</a></li>
-                    <li><img src="../img/download.jpg" alt="hortensias"><p>Hortensias</p><a href="" class="boton-verde">Comprar</a></li>
-                </ul>
+        <section>
+            <h1>¡Bienvenidos a nuestra tienda online!</h1>
+        </section>
+        <section>
+            <h2>PRODUCTOS</h2>
+        </section>
+        <section class="grid-productos">
+            <div class="productos">
+                <img src="../img/Calathea.jpg" alt="Calathea"><p>Calathea</p><a href="" class="boton-azul">Comprar</a>
             </div>
-        </div>
-
+            <div class="productos">
+                <img src="../img/Helecho.jpg" alt="helecho-de-boston"><p>Helecho</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Gomero.jpg" alt="gomero"><p>Gomero (ficus elastica)</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Pothus.jpg" alt="pothus"><p>Pothus Golden (lemon)</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Monstera.jpg" alt="monstera"><p>Monstera Deliciosa</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Philodendro.jpg" alt="philodendro"><p>Philodendro Peruviano</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Santa Rita.jpg" alt="santa-rita"><p>Santa Rita (Bugambilla)</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/Cact lovers.jpg" alt="terrario"><p>Terrario con variedad de cactus</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+            <div class="productos">
+                <img src="../img/download.jpg" alt="hortensias"><p>Hortensias</p><a href="" class="boton-azul">Comprar</a> 
+            </div>
+            <div class="productos">
+                <img src="../img/Areca - M_ Alt_ 80-90 cm (21ø).jpg" alt="areca"><p>Areca</p><a href="" class="boton-azul">Comprar</a>
+            </div>
+        </section>
     </main>
 <footer>
-    <p>Contactate con nosotros para más información</p>
-    <a href= "https://web.whatsapp.com/"><img src="../img/whatsapp.png"></a>
-</footer>
+    <div class="ayuda">
+            <a href= "https://web.whatsapp.com/"><img src= "../img/whatsapp.png" alt="link-de-whatsapp"></a>
+    </div>
+</footer> 
 </body>
 </html>
