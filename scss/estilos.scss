@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+// Variables de colores
+$primary-color: rgb(126, 168, 130);
+$secondary-color: rgb(64, 75, 79);
+$third-color: rgb(248, 200, 80);
+$fourth-color: rgb(218, 237, 192);
+$fifth-color: rgb(41, 77, 48);
+$accent-color: #243632;
+$text-color: #333;
+
+// Configuración de fuentes
+$main-font: 'Julius Sans One', sans-serif;
+$secondary-font: 'Playfair Display', serif;
+
+body {
+    font-family: $secondary-font;
+    background-color: rgb(245, 243, 237);
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+// Banner de oferta
+.banner {
+    display: block;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-weight: bold;
+}
+
+// Barra de navegación
+.navbar {
+    background-color: $fourth-color;
+    font-family: $main-font;
+    padding: 10px;
+    margin-top: -18px;
+
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+
+        .navbar-toggler-icon {
+            background-color: #000;
+        }
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        .nav-link {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:hover {
+                color: $third-color; // Color de hover
+            }
+
+            em {
+                font-style: normal;
+                font-weight: bold;
+                color: #333;
+            }
+        }
+    }
+}
+
+// Carrito de compras
+.cart-icon {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+
+    img {
+        width: 40px;
+    }
+}
+
+// Título principal
+.titulo {
+    background-image: url("../img/vecteezy_watercolor-green-and-golden-leaves-border-illustration_24399215.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: $main-font;
+    color: $fifth-color;
+}
+
+// Botón de promoción
+.boton-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+    text-align: center;
+
+    .promo-button {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+}
+
+// Sección Hero
+.hero {
+    text-align: center;
+    padding: 60px 40px;
+
+    h2 {
+        font-size: 2rem;
+        font-family: $main-font;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-family: $secondary-font;
+    }
+}
+
+// Estilos del carrusel
+$carousel-height: 600px;
+
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    height: $carousel-height;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: $carousel-height;
+    object-fit: cover;
+
+    img {
+        width: 100%;
+        height: $carousel-height;
+        object-fit: contain;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    max-width: 50%;
+
+    .boton-compra {
+        display: inline-block;
+        padding: 10px 20px;
+        justify-content: center;
+        background-color: $third-color;
+        color: white;
+        font-family: $main-font;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 45%;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $fourth-color;
+        }
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    top: -50%;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $primary-color;
+}
+
+// Sección de ubicación
+.ubicacion {
+    width: 100%;
+    align-items: center;
+    padding: -100px;
+    
+    .mapa {
+        width: 500;
+        height: 350;
+        padding: 30px;
+        justify-content: center;
+        margin-left: 25%;
+        }
+
+    .info-ubicacion {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 30px;
+        background-color: $fourth-color;
+    
+        h4 {
+            font-size: 1.8rem;
+            font-family: $main-font;
+            text-align: center;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            font-family: $secondary-font;
+            text-align: center;
+        }
+    }
+}
+// Sección envíos, tarjetas, retiros - Pie de página con WhatsApp
+footer .promo-envio {
+    margin: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; 
+
+    .index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 60px;  
+            margin-bottom: 10px;  
+        }
+
+        span {
+            display: block;
+            font-size: 16px;
+            font-family: $secondary-font;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;  
+        }
+    }
+}
+
+.ayuda {
+    position: fixed;
+    bottom: 30px;  
+    right: 30px;   
+    z-index: 1000;  
+    border-radius: 50%;
+    padding: 10px;
+
+    a {
+        display: block;
+    }
+
+    img {
+        width: 50px;  
+        height: 50px;
+    }
+}
+
+//MEDIA QUERIES 
+
+

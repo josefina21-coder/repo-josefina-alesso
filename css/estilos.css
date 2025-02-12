@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  background-color: rgb(245, 243, 237);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.banner {
+  display: block;
+  text-align: center;
+  background-color: rgb(126, 168, 130);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgb(218, 237, 192);
+  font-family: "Julius Sans One", sans-serif;
+  padding: 10px;
+  margin-top: -18px;
+}
+.navbar .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: #000;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-item {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.navbar .nav-item:hover {
+  transform: translateY(-3px);
+}
+.navbar .nav-item .nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .nav-item .nav-link:hover {
+  color: rgb(248, 200, 80);
+}
+.navbar .nav-item .nav-link em {
+  font-style: normal;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 55px;
+  right: 20px;
+}
+.cart-icon img {
+  width: 40px;
+}
+
+.titulo {
+  background-image: url("../img/vecteezy_watercolor-green-and-golden-leaves-border-illustration_24399215.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: bold;
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(41, 77, 48);
+}
+
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -90px;
+  text-align: center;
+}
+.boton-container .promo-button {
+  background-color: rgb(126, 168, 130);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 40px;
+}
+.hero h2 {
+  font-size: 2rem;
+  font-family: "Julius Sans One", sans-serif;
+}
+.hero h3 {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 600px;
+  object-fit: cover;
+}
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+.carousel-caption .boton-compra {
+  display: inline-block;
+  padding: 10px 20px;
+  justify-content: center;
+  background-color: rgb(248, 200, 80);
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 45%;
+  transition: background-color 0.3s;
+}
+.carousel-caption .boton-compra:hover {
+  background-color: rgb(126, 168, 130);
+  color: rgb(218, 237, 192);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  top: -50%;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(126, 168, 130);
+}
+
+.ubicacion {
+  width: 100%;
+  align-items: center;
+  padding: -100px;
+}
+.ubicacion .mapa {
+  width: 500;
+  height: 350;
+  padding: 30px;
+  justify-content: center;
+  margin-left: 25%;
+}
+.ubicacion .info-ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(218, 237, 192);
+}
+.ubicacion .info-ubicacion h4 {
+  font-size: 1.8rem;
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+}
+.ubicacion .info-ubicacion h5 {
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+footer .promo-envio {
+  margin: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+footer .promo-envio .index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .promo-envio .index img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+footer .promo-envio .index span {
+  display: block;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.ayuda {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 10px;
+}
+.ayuda a {
+  display: block;
+}
+.ayuda img {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
