@@ -187,23 +187,25 @@ body {
   max-width: 500px;
   height: 600px;
   align-items: center;
-  margin-left: 50%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 35%;
   object-fit: cover;
+  padding: 40px;
 }
 .conocenos .info {
   padding: 1rem;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(126, 168, 130);
 }
 .conocenos .info h4 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2.5rem;
-  color: rgb(126, 168, 130);
+  color: white;
   margin-bottom: 1rem;
 }
 .conocenos .info h5 {
   font-size: 1.2rem;
-  color: rgb(64, 75, 79);
+  color: white;
   font-family: "Playfair Display", serif;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -419,6 +421,241 @@ main .container .row p strong {
 .dudas p {
   margin-top: 10px;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .conocenos img {
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 940px) {
+  .conocenos img {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .conocenos img {
+    margin-left: 20%;
+  }
+  footer .promo-envio {
+    grid-template-columns: 1fr;
+  }
+  footer .promo-envio .index {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 625px) {
+  body {
+    width: 100%;
+  }
+  .cart-icon {
+    top: 70px;
+    right: 10px;
+  }
+  .cart-icon img {
+    width: 40px;
+  }
+  .titulo {
+    width: 100vw;
+    max-width: 100%;
+    font-size: 6rem;
+  }
+  .navbar {
+    margin-top: 0;
+  }
+  .conocenos img {
+    margin-left: 15%;
+  }
+  .ayuda {
+    bottom: 10px;
+    right: 10px;
+  }
+  .ayuda img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 515px) {
+  body {
+    width: 100%;
+  }
+  .banner {
+    padding: 5px;
+    font-size: 15px;
+  }
+  .cart-icon {
+    top: 55px;
+  }
+  .titulo {
+    width: 100vw;
+    max-width: 100%;
+    font-size: 5rem;
+  }
+  .boton-container {
+    margin-top: -80px;
+  }
+  .boton-container .promo-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .hero {
+    text-align: center;
+    padding: 50px 30px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+  .carousel-slide {
+    height: 400px;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-item {
+    height: 400px;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+  .conocenos img {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 463px) {
+  .titulo {
+    width: 100vw;
+    max-width: 100%;
+    font-size: 4rem;
+    height: 400px;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+  .carousel-caption .boton-compra {
+    margin-left: 40%;
+  }
+  .conocenos img {
+    margin-left: 3%;
+    width: 400px;
+    height: 400px;
+  }
+  .info h4 {
+    font-size: 1rem;
+  }
+  .info h5 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 422px) {
+  .titulo {
+    font-size: 3rem;
+    height: 300px;
+  }
+  .carousel-caption .boton-compra {
+    margin-left: 35%;
+  }
+  .conocenos img {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 412px) {
+  body {
+    width: 100%;
+  }
+  .banner {
+    padding: 5px;
+  }
+  .cart-icon {
+    top: 55px;
+  }
+  .boton-container {
+    margin-top: -50px;
+  }
+  .boton-container .promo-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  .hero {
+    padding: 40px 20px;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+  .conocenos img {
+    width: 300px;
+    height: 400px;
+    margin: 45px;
+    margin-top: -50px;
+  }
+  footer .promo-envio {
+    margin: 90px;
+  }
+}
+@media screen and (max-width: 405px) {
+  body {
+    width: 100%;
+  }
+  .conocenos img {
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    margin-top: -50px;
+  }
+  footer .promo-envio {
+    margin: 80px;
+  }
+  .info {
+    padding: 30px 10px;
+  }
+  .info h4 {
+    font-size: 1.5rem;
+  }
+  .info h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .banner {
+    font-size: 16px;
+  }
+  .hero {
+    padding: 10px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+  .hero .carousel-slide {
+    height: 200px;
+  }
+  .hero .carousel-item {
+    height: 200px;
+  }
+  .hero .carousel-item img {
+    height: 200px;
+  }
+  .hero .carousel-caption .boton-compra {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .info {
+    padding: 20px 10px;
+  }
+  .info h4 {
+    font-size: 1rem;
+  }
+  .info h5 {
+    font-size: 1rem;
+  }
+  footer .promo-envio .index img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

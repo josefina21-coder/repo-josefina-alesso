@@ -207,23 +207,25 @@ $carousel-height: 600px;
         max-width: 500px;
         height: 600px;
         align-items: center;
-        margin-left: 50%;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 35%;
         object-fit: cover; 
+        padding: 40px;
     }
     // Estilo para la información de la ubicación
     .info {
         padding: 1rem;
+        text-align: center;
+        padding: 40px 20px;
+        background-color: $primary-color;
         h4 {
             font-family: $main-font;
             font-size: 2.5rem;
-            color: $primary-color;
+            color: white;
             margin-bottom: 1rem;
         }
         h5 {
             font-size: 1.2rem;
-            color: $secondary-color;
+            color: white;
             font-family: $secondary-font;
             margin-bottom: 1rem;
             font-weight: normal;
@@ -456,3 +458,319 @@ main {
     }
 }
 
+//MEDIA QUERIES 
+
+@media screen and (max-width: 1199px) {
+    // Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin-left: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 940px){
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin-left: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin-left: 20%;
+        }
+    }
+    footer .promo-envio {
+        grid-template-columns: 1fr;
+        .index {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:625px) {
+    body {
+        width: 100%;
+    }
+    // Carrito de compras
+    .cart-icon {
+        top: 70px;
+        right: 10px;
+        img {
+        width: 40px;
+        }
+    }
+    // Título principal
+    .titulo {
+        width: 100vw;
+        max-width: 100%;
+        font-size: 6rem;
+
+    }
+    //Bara de navegación
+    .navbar {
+        margin-top: 0;
+    }
+
+    .conocenos {
+        img {
+            margin-left: 15%;
+        }
+    }
+    //Ïcono de WhatsApp
+    .ayuda {
+        bottom: 10px;  
+        right: 10px;   
+        img {
+            width: 50px;  
+            height: 50px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:515px){
+    body {
+        width: 100%;
+    }
+    //Banner
+    .banner {
+        padding: 5px;
+        font-size: 15px;
+    }
+    //Carrito de compras
+    .cart-icon {
+        top: 55px;
+    }
+    //Título principal
+    .titulo {
+        width: 100vw;
+        max-width: 100%;
+        font-size: 5rem;
+    }
+    // Botón de promoción
+    .boton-container {
+        margin-top: -80px;
+        .promo-button {
+            padding: 10px 15px;
+            font-size: 1rem;
+        }
+    }   
+    .hero {
+        text-align: center;
+        padding: 50px 30px;
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    // Estilos del carrusel
+
+    .carousel-slide {
+        height: 400px;
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+    .carousel-item {
+        height: 400px;
+        img {
+            height: 400px;
+        }
+    }
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin-left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 463px){
+    //Título principal
+    .titulo {
+        width: 100vw;
+        max-width: 100%;
+        font-size: 4rem;
+        height: 400px;
+    }
+    // Estilos del carrusel
+    .carousel-caption {
+        font-size: 1rem;
+        .boton-compra {
+            margin-left: 40%;
+        }
+    }
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin-left: 3%;
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .info {
+        h4 {
+            font-size: 1rem;
+        }
+        h5 {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 422px){
+    //Título principal
+    .titulo {
+        font-size: 3rem;
+        height: 300px;
+    }
+    // Estilos del carrusel
+    .carousel-caption {
+        .boton-compra {
+            margin-left: 35%;
+        }
+    }
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            margin:0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 412px){
+    body {
+        width: 100%;
+    }
+    // Banner de oferta
+    .banner {
+        padding: 5px;
+    }
+    
+    // Carrito de compras
+    .cart-icon {
+        top: 55px;
+    }
+    
+    // Botón de promoción
+    .boton-container {
+        margin-top: -50px;
+        .promo-button {
+            padding: 5px 10px;
+            font-size: 1rem;
+        }
+    }
+    
+    // Sección Hero
+    .hero {
+        padding: 40px 20px;
+        h3 {
+            font-size: 1rem;
+        }
+    }
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            width: 300px;
+            height: 400px;
+            margin:45px;
+            margin-top: -50px;
+        }
+    }
+    // Sección envíos, tarjetas, retiros - Pie de página con WhatsApp
+    footer .promo-envio {
+        margin: 90px 
+    }
+}
+
+@media screen and (max-width: 405px){
+    body {
+        width: 100%;
+    }
+    //Estilo para la imagen de ubicación
+    .conocenos {
+        img {
+            width: 300px;
+            height: 400px;
+            margin:40px;
+            margin-top: -50px;
+        }
+    }
+    // Sección envíos, tarjetas, retiros - Pie de página con WhatsApp
+    footer .promo-envio {
+        margin: 80px 
+    }
+    // Estilo para la información de la ubicación
+    .info {
+        padding: 30px 10px;
+        h4 {
+            font-size: 1.5rem;
+        }
+        h5 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:395px) {
+    // Banner de oferta
+    .banner {
+        font-size: 16px;
+        }
+    // Sección Hero
+    .hero {
+        padding: 10px;
+    h2 {
+        font-size: 1.5rem;
+        }
+    h3 {
+        font-size: 1rem;
+        }
+        // Estilos del carrusel
+        .carousel-slide {
+            height: 200px;
+            }
+        .carousel-item {
+        height: 200px;
+            img {
+                height: 200px;
+                }
+            }
+        .carousel-caption {
+            .boton-compra {
+            padding: 5px 10px;
+            font-size: 10px;
+            }
+        }
+    }
+    // Sección de info
+    // Estilo para la información de la ubicación
+    .info {
+        padding: 20px 10px;
+        h4 {
+            font-size: 1rem;
+        }
+        h5 {
+            font-size: 1rem;
+        }
+    }
+// Sección envíos, tarjetas, retiros - Pie de página con WhatsApp
+    footer .promo-envio { 
+        .index {
+            img {
+                width: 30px;  
+                margin-bottom: 10px;  
+            }
+        }
+    }
+}
