@@ -416,6 +416,7 @@ main {
 }
 
 //PAGES: REDES
+
 .redes-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  
@@ -476,7 +477,17 @@ main {
             margin-left: 25%;
         }
     }
+.redes-img {
+    gap: 10px;   
+        img {
+            width: 200px;  
+            height: 200px; 
+        }   
+    }
 }
+
+
+
 
 @media screen and (max-width: 767px) {
     //Estilo para la imagen de ubicación
@@ -531,7 +542,19 @@ main {
             height: 50px;
         }
     }
-    
+    //Redes
+    .texto-redes {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+    .redes-img {
+        img {
+            width: 150px;  
+            height: 150px; 
+            padding: 30px ;
+        }
+    }
 }
 
 @media screen and (max-width:515px){
@@ -622,6 +645,13 @@ main {
         }
         h5 {
             font-size: 0.5rem;
+        }
+    }
+    .redes-img {
+        img {
+            width: 100px;  
+            height: 100px; 
+            padding: 20px ;
         }
     }
 }
