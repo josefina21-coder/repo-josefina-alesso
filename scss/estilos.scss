@@ -44,9 +44,9 @@ body {
     margin-top: -18px;
     .navbar-toggler {
         border: none;
-        background-color: transparent;
+        background-color: $primary-color;
         .navbar-toggler-icon {
-            background-color: #000;
+            background-color: $primary-color;
         }
     }
     .navbar-nav {
@@ -63,16 +63,16 @@ body {
             transform: translateY(-3px);
         }
         .nav-link {
-            color: #000;
+            color: $fifth-color;
             text-decoration: none;
             font-weight: 600;
             &:hover {
-                color: $third-color; // Color de hover
+                color: $fifth-color; 
             }
             em {
                 font-style: normal;
                 font-weight: bold;
-                color: #333;
+                color: $fifth-color;
             }
         }
     }
@@ -148,7 +148,7 @@ $carousel-height: 600px;
 }
 .carousel-item {
     height: $carousel-height;
-    object-fit: cover;
+    object-fit:contain;
     img {
         width: 100%;
         height: $carousel-height;
@@ -195,34 +195,37 @@ $carousel-height: 600px;
     background-color: $primary-color;
 }
 
-// Sección de ubicación
-.ubicacion {
-    width: 100%;
+// Sección de info
+// Estilo para la sección de "conocenos"
+.conocenos {
     align-items: center;
-    padding: -100px;
+    margin: 2rem 0;
+    padding: 1rem;
     
-    .mapa {
-        width: 500;
-        height: 350;
-        padding: 30px;
-        justify-content: center;
-        margin-left: 25%;
-        }
-    .info-ubicacion {
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        margin-top: 30px;
-        background-color: $fourth-color; 
+    // Estilo para la imagen
+    img {
+        max-width: 300px;
+        height: 400px;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover; 
+    }
+    // Estilo para la información de la ubicación
+    .info {
+        padding: 1rem;
         h4 {
-            font-size: 1.8rem;
             font-family: $main-font;
-            text-align: center;
+            font-size: 2.5rem;
+            color: $primary-color;
+            margin-bottom: 1rem;
         }
         h5 {
             font-size: 1.2rem;
+            color: $secondary-color;
             font-family: $secondary-font;
-            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: normal;
         }
     }
 }
@@ -353,10 +356,10 @@ h3 {
     background-color: $fourth-color; 
 
     img {
-        width: 100%; // Imágenes responsivas
+        width: 100%; 
         height: auto;
-        object-fit: cover; // Ajustar la imagen al contenedor
-        border-radius: 8px; // Bordes redondeados
+        object-fit: cover; 
+        border-radius: 8px; 
         margin-bottom: 1rem;
     }
     ul {
@@ -379,7 +382,7 @@ h3 {
 main {
     padding: 2rem;
     h1 {
-        font-family: $main-font; // Fuente principal para el título
+        font-family: $main-font; 
         font-size: 2.5rem;
         color: $primary-color;
         margin-bottom: 1rem;
@@ -451,3 +454,4 @@ main {
             font-size: 1.1rem;
     }
 }
+
