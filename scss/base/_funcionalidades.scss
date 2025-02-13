@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+// Variables de colores
+$primary-color: rgb(126, 168, 130);
+$secondary-color: rgb(64, 75, 79);
+$third-color: rgb(248, 200, 80);
+$fourth-color: rgb(218, 237, 192);
+$fifth-color: rgb(41, 77, 48);
+$accent-color: #243632;
+$text-color: #333;
+
+// Configuración de fuentes
+$main-font: 'Julius Sans One', sans-serif;
+$secondary-font: 'Playfair Display', serif;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $secondary-font;
+    background-color: rgb(245, 243, 237);
+    color: $text-color;
+    height: 100%;
+    overflow-x: hidden;
+}

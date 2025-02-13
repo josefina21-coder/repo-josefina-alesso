@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Playfair Display", serif;
   background-color: rgb(245, 243, 237);
   color: #333;
-  margin: 0;
-  padding: 0;
   height: 100%;
   overflow-x: hidden;
 }
@@ -69,6 +72,39 @@ body {
 }
 .cart-icon img {
   width: 40px;
+}
+
+.conocenos {
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.conocenos img {
+  max-width: 500px;
+  height: 600px;
+  align-items: center;
+  margin-left: 35%;
+  object-fit: cover;
+  padding: 40px;
+}
+.conocenos .info {
+  padding: 1rem;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(126, 168, 130);
+}
+.conocenos .info h4 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.conocenos .info h5 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 .titulo {
@@ -176,83 +212,6 @@ body {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgb(126, 168, 130);
-}
-
-.conocenos {
-  align-items: center;
-  margin: 2rem 0;
-  padding: 1rem;
-}
-.conocenos img {
-  max-width: 500px;
-  height: 600px;
-  align-items: center;
-  margin-left: 35%;
-  object-fit: cover;
-  padding: 40px;
-}
-.conocenos .info {
-  padding: 1rem;
-  text-align: center;
-  padding: 40px 20px;
-  background-color: rgb(126, 168, 130);
-}
-.conocenos .info h4 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-.conocenos .info h5 {
-  font-size: 1.2rem;
-  color: white;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1rem;
-  font-weight: normal;
-}
-
-footer .promo-envio {
-  margin: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-footer .promo-envio .index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-footer .promo-envio .index img {
-  width: 60px;
-  margin-bottom: 10px;
-}
-footer .promo-envio .index span {
-  display: block;
-  font-size: 16px;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  color: #333;
-  margin: 5px 0;
-}
-
-.ayuda {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
-  border-radius: 50%;
-  padding: 10px;
-}
-.ayuda a {
-  display: block;
-}
-.ayuda img {
-  width: 50px;
-  height: 50px;
 }
 
 .grid-productos {
@@ -421,6 +380,50 @@ main .container .row p strong {
 .dudas p {
   margin-top: 10px;
   font-size: 1.1rem;
+}
+
+footer .promo-envio {
+  margin: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+footer .promo-envio .index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .promo-envio .index img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+footer .promo-envio .index span {
+  display: block;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.ayuda {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 10px;
+}
+.ayuda a {
+  display: block;
+}
+.ayuda img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1199px) {

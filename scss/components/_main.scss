@@ -1,0 +1,241 @@
+// Sección Hero
+.hero {
+    text-align: center;
+    padding: 60px 40px;
+    h2 {
+        font-size: 2rem;
+        font-family: $main-font;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-family: $secondary-font;
+    }
+}
+// Estilos del carrusel
+$carousel-height: 600px;
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    height: $carousel-height;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item {
+    height: $carousel-height;
+    object-fit:contain;
+    img {
+        width: 100%;
+        height: $carousel-height;
+        object-fit: contain;
+    }
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    max-width: 50%;
+    .boton-compra {
+        display: inline-block;
+        padding: 10px 20px;
+        justify-content: center;
+        background-color: $third-color;
+        color: white;
+        font-family: $main-font;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 45%;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: $primary-color;
+            color: $fourth-color;
+        }
+    }
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    top: -50%;
+    padding: 10px;
+    color: white;
+    border: none;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $primary-color;
+}
+//PAGES: PRODUCTOS
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    .producto {
+        background-color: $fourth-color;
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h3 {
+            font-family: $main-font;
+            color: $accent-color;
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+        p {
+            font-family: $main-font;
+            color: $text-color;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .boton-compra {
+            display: inline-block;
+            text-decoration: none;
+            background-color: $third-color;
+            color: $fifth-color;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: $main-font;
+            transition: background 0.3s;
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+    }
+}
+//PAGES: CUIDADOS
+h2 {
+    font-family: $main-font;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 5px;
+    margin-top: -20px;
+}
+// Estilos generales para la sección de cuidados
+.cuidados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1rem; 
+    padding: 1rem;
+    background-color: $fourth-color; 
+
+    img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 8px; 
+        margin-bottom: 1rem;
+    }
+    ul {
+        list-style: none; 
+        padding: 0;
+        li {
+            margin-bottom: 2rem;
+            p {
+                font-family: $secondary-font; // Fuente para el texto principal
+                color: $text-color;
+                line-height: 1.6; 
+                text-align:center; 
+            }
+        }
+    }
+}
+//PAGES: NOSOTROS
+main {
+    padding: 2rem;
+    h1 {
+        font-family: $main-font; 
+        font-size: 2.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    h2 {
+        font-family: $secondary-font; 
+        font-size: 2rem;
+        color: $secondary-color;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+            .row p {
+                font-family: $secondary-font; 
+                font-size: 1.1rem;
+                color: $text-color;
+                line-height: 1.6;
+                text-align: justify;
+                strong {
+                font-family: $main-font; 
+            }
+        }
+    }
+}
+//PAGES: REDES
+.redes-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;  
+    justify-items: center;  
+    align-items: center;  
+    a {
+        display: block;  
+    }
+    img {
+        width: 300px;  
+        height: 300px; 
+        object-fit: contain; 
+        transition: transform 0.3s ease; 
+        padding: 50px ;
+    }
+    img:hover {
+        transform: scale(1.1);  
+    }
+}
+// Sección de dudas
+.dudas {
+    background-color: $primary-color;
+    color: white;
+    padding: 30px;
+    text-align: center;
+
+        span {
+            font-weight: bold;
+            font-size: 1.2rem;
+    }
+
+        p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+    }
+}
