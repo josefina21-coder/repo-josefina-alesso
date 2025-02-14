@@ -324,3 +324,53 @@
         }
     }
 }
+
+@media screen and (max-width:395px) {
+    // Banner de oferta
+    .banner {
+        font-size: 14px;
+        }
+    // Sección Hero
+    .hero {
+        padding: 8px;
+    h2 {
+        font-size: 1.2rem;
+        }
+    h3 {
+        font-size: 1rem;
+        }
+    }
+    // Sección de info
+    // Estilo para la información de la ubicación
+    .info {
+        padding: 15px 5px;
+    }
+    h2 {
+        padding: 30px 10px;
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 4px;
+    }
+    // Estilos generales para la sección de cuidados
+    .cuidados { 
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+        padding: 1rem;
+        background-color: $fourth-color; 
+        img {
+            width: 250px; 
+            height: 400px;
+        }
+        ul {
+            li {
+                margin-bottom: 1rem;
+                p {
+                    line-height: 1; 
+                    font-size: 15px; 
+                }
+            }
+        }
+    }
+}

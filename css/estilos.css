@@ -12,6 +12,39 @@ body {
   overflow-x: hidden;
 }
 
+.conocenos {
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.conocenos img {
+  max-width: 500px;
+  height: 600px;
+  align-items: center;
+  margin-left: 35%;
+  object-fit: cover;
+  padding: 40px;
+}
+.conocenos .info {
+  padding: 1rem;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(126, 168, 130);
+}
+.conocenos .info h4 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.conocenos .info h5 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
 .banner {
   display: block;
   text-align: center;
@@ -72,39 +105,6 @@ body {
 }
 .cart-icon img {
   width: 40px;
-}
-
-.conocenos {
-  align-items: center;
-  margin: 2rem 0;
-  padding: 1rem;
-}
-.conocenos img {
-  max-width: 500px;
-  height: 600px;
-  align-items: center;
-  margin-left: 35%;
-  object-fit: cover;
-  padding: 40px;
-}
-.conocenos .info {
-  padding: 1rem;
-  text-align: center;
-  padding: 40px 20px;
-  background-color: rgb(126, 168, 130);
-}
-.conocenos .info h4 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 1rem;
-}
-.conocenos .info h5 {
-  font-size: 1.2rem;
-  color: white;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1rem;
-  font-weight: normal;
 }
 
 .titulo {
@@ -678,6 +678,48 @@ footer .promo-envio .index span {
   footer .promo-envio .index img {
     width: 30px;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .banner {
+    font-size: 14px;
+  }
+  .hero {
+    padding: 8px;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+  .info {
+    padding: 15px 5px;
+  }
+  h2 {
+    padding: 30px 10px;
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 4px;
+  }
+  .cuidados {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(218, 237, 192);
+  }
+  .cuidados img {
+    width: 250px;
+    height: 400px;
+  }
+  .cuidados ul li {
+    margin-bottom: 1rem;
+  }
+  .cuidados ul li p {
+    line-height: 1;
+    font-size: 15px;
   }
 }
 

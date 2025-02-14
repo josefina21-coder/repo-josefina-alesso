@@ -1,3 +1,65 @@
+// Banner de oferta
+.banner {
+    display: block;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-weight: bold;
+}
+// Barra de navegación
+.navbar {
+    background-color: $fourth-color;
+    font-family: $main-font;
+    padding: 10px;
+    margin-top: -18px;
+    .navbar-toggler {
+        border: none;
+        background-color: $primary-color;
+        .navbar-toggler-icon {
+            background-color: $primary-color;
+        }
+    }
+    .navbar-nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        margin: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: translateY(-3px);
+        }
+        .nav-link {
+            color: $fifth-color;
+            text-decoration: none;
+            font-weight: 600;
+            &:hover {
+                color: $fifth-color; 
+            }
+            em {
+                font-style: normal;
+                font-weight: bold;
+                color: $fifth-color;
+            }
+        }
+    }
+}
+// Carrito de compras
+.cart-icon {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    img {
+        width: 40px;
+    }
+}
 // Título principal
 .titulo {
     background-image: url("../img/vecteezy_watercolor-green-and-golden-leaves-border-illustration_24399215.jpg");
@@ -15,7 +77,6 @@
     font-family: $main-font;
     color: $fifth-color;
 }
-
 // Botón de promoción
 .boton-container {
     display: flex;
