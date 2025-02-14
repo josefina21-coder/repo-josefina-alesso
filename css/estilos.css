@@ -109,6 +109,8 @@ body {
 
 .titulo {
   background-image: url("../img/vecteezy_watercolor-green-and-golden-leaves-border-illustration_24399215.jpg");
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(41, 77, 48);
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -120,8 +122,6 @@ body {
   text-align: center;
   font-size: 8rem;
   font-weight: bold;
-  font-family: "Julius Sans One", sans-serif;
-  color: rgb(41, 77, 48);
 }
 
 .boton-container {
